@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dinner shopping list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,40 +18,47 @@
     <h2>Let’s go to the mall!</h2>
   </header>
   <main>
-    <select name="item-to-buy">
-      <option value="pickles">
+    <div class="shopping-list">
+      <label>
+        <input type="checkbox" name="pickles">
         A lot of pickles
         <span class="comment">
           for the next lessons about CSS
         </span>
-      </option>
-      <option value="apples">
+      </label>
+      <label>
+        <input type="checkbox" name="apples">
         10 apples
         <span class="comment">
           for more CSS manipulations
         </span>
-      </option>
-      <option value="oranges">20 oranges
+      </label>
+      <label>
+        <input type="checkbox" name="oranges">
+        20 oranges
         <span class="comment">
           because they are awesome
         </span>
-      </option>
-      <option value="plates">
+      </label>
+      <label>
+        <input type="checkbox" name="plates">
         13 plates
         <span class="comment">
           hm... they always dissapear
         </span>
-      </option>
-      <option value="bentos">
+      </label>
+      <label>
+        <input type="checkbox" name="bentos">
         15 bentos
-      </option>
-      <option value="sake">
+      </label>
+      <label>
+        <input type="checkbox" name="sake">
         1 bottle of Sake
         <span class="comment">
           for my friends
         </span>
-      </option>
-    </select>
+      </label>
+    </div>
     <span class="bon-appetit">
       Bon appetit :)
     </span>
