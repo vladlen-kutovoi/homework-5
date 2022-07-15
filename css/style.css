@@ -108,13 +108,23 @@ label:active {
   margin-left: 3px;
 }
 
-[type="checkbox"]:checked~span {
-  text-decoration: line-through;
+[type="checkbox"]:checked~div {
   color: #9B96AC;
 }
 
-[type="checkbox"]:checked+.checkbox {
-  text-decoration: none;
+label div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+[type="checkbox"]:checked~div::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #9B96AC;
+  position: absolute;
 }
 
 .bon-appetit {
