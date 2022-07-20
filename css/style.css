@@ -1,12 +1,12 @@
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  src: url(../fonts/roboto/roboto-regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  src: url(../fonts/roboto/roboto-bold.ttf);
   font-weight: 700;
 }
 
@@ -22,11 +22,20 @@ body {
 
 header {
   background-color: #4A4F56;
+}
+
+.container {
+  max-width: 535px;
+  margin: 0 auto;
+}
+
+header .container {
   min-height: 82px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px 15px;
 }
 
 h1 {
@@ -41,9 +50,12 @@ h2 {
   font-size: 18px;
 }
 
+main .container {
+  padding-top: 20px;
+}
+
 .shopping-list {
-  width: 535px;
-  margin: 20px auto 45px auto;
+  margin-bottom: 45px;
 }
 
 label {
@@ -127,11 +139,11 @@ label div {
   position: absolute;
 }
 
-.bon-appetit {
+.wish {
   display: flex;
-  width: 535px;
   min-height: 45px;
   margin: 0 auto;
+  padding: 5px 15px;
   justify-content: center;
   align-items: center;
   background-color: #4A4F56;
@@ -140,12 +152,12 @@ label div {
 }
 
 @media only screen and (max-width: 575px) {
-  main {
-    padding: 0 20px
+  main .container {
+    padding: 20px 20px 20px;
   }
 
   .shopping-list,
-  .bon-appetit {
+  .wish {
     width: 100%;
   }
 
