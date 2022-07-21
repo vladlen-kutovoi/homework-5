@@ -67,11 +67,11 @@ label {
   font-size: 18px;
 }
 
-label:nth-child(odd) {
+ul li:nth-child(odd) {
   background-color: #88839E;
 }
 
-label:nth-child(even) {
+ul li:nth-child(even) {
   background-color: #7A7593;
 }
 
